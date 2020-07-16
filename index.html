@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapp">
+      <div class="container">
+        <div class="row">
+          <div class="header__info d-flex justify-content-end">
+            <div class="header__logo col-lg-3 d-flex justify-content-end">
+              <div class="header__img">
+                <img src="img/logoA.png" alt="logoREd" class="logo__img">
+                <img src="img/logoB.png" alt="logoGreen" class="logo__img_small">
+              </div>
+              <h1>
+                Микоцин
+              </h1>
+            </div>
+            <div class="header__title col-lg-7 d-flex justify-content-center">
+              <div class="header__recommendation">
+                <img src="img/rec1.png" alt="medal" class="recommendation__img">
+                <p>№1 Для избавления
+                  от любого типа грибка</p>
+              </div>
+              <div class="header__recommendation">
+                <img src="img/rec2.png" alt="guard" class="recommendation__img">
+                <p>Рекомендован
+                  дерматологами
+                </p>
+              </div>
+              <div class="header__recommendation">
+                <img src="img/rec3.png" alt="people" class="recommendation__img">
+                <p>13000+ довольных
+                  клиентов за 2018 год
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="header__hero col-lg-5">
+            asd
+          </div>
+          <div class="header__content d-flex justify-content-center col-lg-7">
+            <div class="header__content__text">
+              <h2>Комплексное
+                избавление
+                от грибка —
+                <span class="header__text__styled">изнутри и снаружи</span>
+              </h2>
+              <div class="header__tabs">
+                <div class="header__tab">
+                  <div class="header__tab__circle">
+                    <p>2в1</p>
+                  </div>
+                  <p class="header__tab__text">Комплекс Микоцин <span class="">устраняет
+                      зуд, неприятный запах</span>
+                    и возвращает эстетичный вид</p>
+                </div>
+                <div class="header__tab">
+                  <div class="header__tab__circle">
+                    <p>1</p>
+                  </div>
+                  <p class="header__tab__text"><span class="text__medium tab__text_pills">Таблетки</span> Микоцин
+                    <span class="text__medium">уничтожают все виды грибка</span>
+                    на ногтях и коже</p>
+                </div>
+                <div class="header__tab">
+                  <div class="header__tab__circle">
+                    <p>2</p>
+                  </div>
+                  <p class="header__tab__text"><span class="text__medium tab__text_gel">Гель</span> Микоцин
+                    <span class="text__medium">восстанавливает кожу</span>
+                    и создает на ней <span class="text__medium">защитный
+                      барьер</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="header__content__booking">
+              <div class="booking__header">
+                <h3>Успейте заказать
+                  <br>со скидкой <br>
+                  <span class="text__medium sell_date">до 10.09.2018</span>
+                </h3>
+                <div class="price d-flex justify-content-center">
+                  <div class="old_price">
+                    <h4>старая цена</h4>
+                    <p>918 &#8381;</p>
+                  </div>
+                  <div class="new_price">
+                    <h4>новая цена</h4>
+                    <p>459 &#8381;</p>
+                  </div>
+                </div>
+                <form action="#" class="header__form" id="order">
+                  <input type="text" placeholder="Имя" class="btn__text inp__name">
+                  <input type="tel" placeholder="Телефон" class="btn__text inp__phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <button type="submit" class="header__btn__submit" form="order">
+                    <p>Заказать <br> <span class="submit__btn__text">со скидкой</span></p>
+                  </button>
+                </form>
+                <p class="remaining">Осталось
+                  <span class="text__medium remaining__amount" id="amount"></span>
+                  упаковок<br>со скидкой
+                </p>
+                <div class="guard d-flex justify-content-center">
+                  <img src="img/shield.png" alt="shield" class="shield">
+                  <h4>Ваши данные защищены!</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <canvas></canvas> -->
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="header__img">
+          <img src="img/logoA.png" alt="logoRed" class="logo__img">
+          <img src="img/logoB.png" alt="logoGreen" class="logo__img_small">
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="main__title col-lg-10">
+          <h2>
+            Грибок – это опасная инфекция
+          </h2>
+          <p>
+            которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="sickness__card col-lg-4">
+          <div class="sickness__description">
+            <div class="sickness__round__img first">
+              <img src="img/card1.png" alt="sickness">
+            </div>
+            <h5 class="card__title">Сложным формам аллергии</h5>
+          </div>
+          <p class="card__text">Может появится сильная реакция
+            на на привычную пищу, одежду,
+            средства гигиены
+          </p>
+        </div>
+        <div class="sickness__card col-lg-4">
+          <div class="sickness__description">
+            <div class="sickness__round__img two">
+              <img src="img/card2.png" alt="sickness-leg">
+            </div>
+            <h5 class="card__title ">Потере ногтя и ампутации пальца</h5>
+          </div>
+          <p class="card__text">После полного разрушения ногтя
+            грибок распространяется на палец,
+            что приводит к его ампутации
+          </p>
+        </div>
+        <div class="sickness__card col-lg-4">
+          <div class="sickness__description">
+            <div class="sickness__round__img three">
+              <img src="img/card3.png" alt="sickness-bad">
+            </div>
+            <h5 class="card__title">Тяжелому поражению внутренних органов</h5>
+          </div>
+          <p class="card__text">Может привести к повреждениям
+            мозга, слепоте, отказу печени, почек
+            и сердца
+          </p>
+        </div>
+      </div>
+      <div class="row stats">
+        <div class="stats__text">
+          <div class="stats__img">
+            <img src="img/stat.png" class="img-fluid" alt="industry">
+          </div>
+          <p>
+            <span class="text__medium">Статистика:</span> каждые 60 секунд врачи диагностируют опасные поражения внутренних органов,
+            вызванные грибком, у 1-го пациент
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <hr>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
