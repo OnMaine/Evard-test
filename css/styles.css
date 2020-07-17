@@ -892,6 +892,10 @@ canvas {
   .circle__first::before {
     top: 52px;
   }
+
+  .booking__delivery {
+    top: -19.4px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -912,6 +916,10 @@ canvas {
   .sickness__description {
     display: flex;
     align-items: center
+  }
+
+  .booking__delivery {
+    top: -19.4px;
   }
 }
 
@@ -943,15 +951,21 @@ canvas {
   }
 
   .header__content__text {
-    padding-left: 130px;
+    padding-left: 90px;
+    margin-right: 10px;
   }
 
   .header__content__booking {
     max-height: 570px;
   }
 
+
   .header__content__text h2 {
     font-size: 30px;
+  }
+
+  .header__tab p {
+    font-size: 18px;
   }
 
   .header__text__styled {
@@ -976,7 +990,8 @@ canvas {
   }
 
   .circle__three::after {
-    top: -65px;
+    top: -58px;
+    left: 38%;
   }
 
   .circle__two::after {
@@ -984,7 +999,7 @@ canvas {
   }
 
   .circle__two::before {
-    top: -60px;
+    top: -50px;
   }
 
   .circle__first::after {
@@ -992,7 +1007,11 @@ canvas {
   }
 
   .circle__first::before {
-    top: 52px;
+    top: 62px;
+  }
+
+  .booking__delivery {
+    top: -19.4px;
   }
 }
 
