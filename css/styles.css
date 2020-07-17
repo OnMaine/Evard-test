@@ -829,6 +829,10 @@ canvas {
 
 /* media */
 @media (min-width: 576px) and (max-width: 768px) {
+  .header {
+    padding-bottom: 0;
+  }
+
   .header__hero {
     display: none;
   }
@@ -862,9 +866,17 @@ canvas {
   .header__content__booking {
     max-height: 570px;
   }
+
+  canvas {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .header {
+    padding-bottom: 0;
+  }
+
   .header__hero {
     display: none;
   }
@@ -877,9 +889,17 @@ canvas {
     display: flex;
     align-items: center
   }
+
+  canvas {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  .header {
+    padding-bottom: 0;
+  }
+
   .header__logo {
     visibility: hidden;
     padding: 0;
@@ -894,12 +914,20 @@ canvas {
     font-size: 10px;
   }
 
-  .header__content__booking {
+  .header__content__text {
+    padding-left: 170px;
+  }
+
+  .hero__circle__mico__group {
     display: none;
   }
 
-  .header__content__text {
-    padding-left: 170px;
+  canvas {
+    display: none;
+  }
+
+  .header__content__booking {
+    max-height: 570px;
   }
 }
 
