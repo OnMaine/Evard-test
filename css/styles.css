@@ -55,10 +55,10 @@ h2 {
   opacity: 0.5;
 }
 
-  .header__info {
-    display: flex;
-    justify-content: flex-end;
-  }
+.header__info {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .header h1 {
   font-size: 22px;
@@ -406,6 +406,7 @@ h2 {
   border-radius: 10px;
   padding: 0;
   position: relative;
+  z-index: 9;
 }
 
 .booking__delivery {
@@ -818,6 +819,12 @@ hr {
   height: 3px;
   border: none;
   margin: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 510px;
+  z-index: 0;
 }
 
 /* media */
