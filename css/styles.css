@@ -131,8 +131,83 @@ h2 {
   transform: rotate(-10deg);
 }
 
-.header__hero__circle::after {
-  
+/* legs img */
+.hero__circle__legs {
+  position: absolute;
+  top: -73px;
+  left: -275px;
+}
+
+/* micoPils */
+.hero__circle__mico__red {
+  position: absolute;
+  top: 420px;
+  left: -55px;
+  z-index: 4;
+}
+
+.header__price {
+  position: absolute;
+}
+
+.header__price::after {
+  content: "299 ₽";
+  background-color: #ff6b00;
+  position: absolute;
+  left: 228px;
+  top: 403px;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 8;
+}
+
+.header__price::before {
+  content: "299 ₽";
+  background-color: #a8ca3f;
+  position: absolute;
+  left: 338px;
+  top: 533px;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 8;
+}
+
+.hero__circle__mico__green {
+  position: absolute;
+  top: 550px;
+  left: 50px;
+  z-index: 6;
+}
+
+.hero__circle__mico__group {
+  position: absolute;
+  top: 624px;
+  left: 190px;
+  z-index: 7;
+}
+
+.hero__circle__tree {
+  position: absolute;
+  top: 420px;
+  left: 155px;
+  z-index: 2;
+}
+
+.hero__circle__pils{
+  position: absolute;
+  top: 650px;
+  left: -110px;
+  z-index: 5;
 }
 
 /* header content */
