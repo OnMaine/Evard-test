@@ -929,6 +929,51 @@ canvas {
   .header__content__booking {
     max-height: 570px;
   }
+
+  .header__content__text h2 {
+    font-size: 30px;
+  }
+
+  .header__text__styled {
+    font-size: 25px;
+  }
+
+  .header__text__styled {
+    font-size: 25px;
+  }
+
+  .header__text__styled::before {
+    width: 100px;
+  }
+
+  .header__text__styled::after {
+    width: 100px;
+    left: 120px;
+  }
+
+  .circle__three::before {
+    top: -41px;
+  }
+
+  .circle__three::after {
+    top: -65px;
+  }
+
+  .circle__two::after {
+    top: 60px;
+  }
+
+  .circle__two::before {
+    top: -60px;
+  }
+
+  .circle__first::after {
+    top: 83px;
+  }
+
+  .circle__first::before {
+    top: 52px;
+  }
 }
 
 @media (min-width: 1200px) {
