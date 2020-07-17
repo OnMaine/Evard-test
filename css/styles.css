@@ -53,12 +53,17 @@ h2 {
 }
 
 .header__title {
-  padding-top: 25px;
+  padding: 25px 0 0;
 }
 
 .header__recommendation {
   display: flex;
   justify-content: center;
+  padding-right: 20px;
+}
+
+.header__recommendation:last-child {
+  padding-right: 0px;
 }
 
 .header__recommendation p {
@@ -66,6 +71,11 @@ h2 {
   font-style: italic;
   padding-left: 12px;
   color: #797a7a;
+}
+
+.recommendation__img {
+  max-width: 40px;
+  max-height: 41px;
 }
 
 /* header content */
@@ -125,6 +135,14 @@ h2 {
   float: left;
 }
 
+.header__tab:hover {
+  cursor: pointer;
+}
+
+.header__tab:hover .header__tab__circle {
+  box-shadow: 1px 0px 41px -1px rgba(168,202,63,1);
+}
+
 /*tab text */
 .header__tab p {
   padding-left: 18px;
@@ -171,6 +189,7 @@ h2 {
   font-weight: 700;
   color: #FFFFFF;
   margin: 0;
+  position: relative;
 }
 
 .header__tab__circle p {
@@ -180,6 +199,66 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+/* tab  arrows */
+.circle__three::before {
+  content: "-";
+  position: absolute;
+  color: #aec3da;
+  left: 40%;
+  top: -31px;
+  transform: rotate(90deg);
+  font-size: 20px;
+}
+
+.circle__three::after {
+  content: "+";
+  position: absolute;
+  color: #aec3da;
+  left: 36%;
+  top: -45px;
+  transform: rotate(90deg);
+  font-size: 15px;
+}
+
+.circle__two::after {
+  content: "-";
+  position: absolute;
+  color: #aec3da;
+  left: 40%;
+  top: 50px;
+  transform: rotate(90deg);
+  font-size: 20px;
+}
+
+.circle__two::before {
+  content: "-";
+  position: absolute;
+  color: #aec3da;
+  left: 40%;
+  top: -30px;
+  transform: rotate(90deg);
+  font-size: 20px;
+}
+
+.circle__first::after {
+  content: "-";
+  position: absolute;
+  color: #aec3da;
+  left: 40%;
+  top: 63px;
+  transform: rotate(90deg);
+  font-size: 20px;
+}
+
+.circle__first::before {
+  content: "∧";
+  position: absolute;
+  color: #aec3da;
+  left: 36%;
+  top: 52px;
+  font-size: 14px;
 }
 
 /* header booking form */
@@ -399,8 +478,22 @@ main {
 
 /* cards section*/
 .sickness__card {
-  padding-bottom: 75px;
+  padding-bottom: 35px;
 }
+
+.sickness__card:hover {
+  box-shadow: 0px 37px 58px -62px rgba(240,159,115,1);
+}
+
+.sickness__card:hover .card__text::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 300px;
+    height: 3px;
+    background-color: #becbd8;
+    transition: 1s;
+  }
 
 .card__title {
   font-size: 22px;
@@ -515,6 +608,7 @@ main {
 .stats {
   border: 3px solid #f4d3bb;
   border-radius: 15px;
+  margin-top: 40px;
 }
 
 .stats__text {
