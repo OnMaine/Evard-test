@@ -2,7 +2,7 @@ let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext("2d");
 
 function draw() {
-  let width = window.innerWidth;
+  let width = document.documentElement.clientWidth;
   let height = 345;
   canvas.width = width;
   canvas.height = height;
