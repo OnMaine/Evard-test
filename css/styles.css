@@ -935,15 +935,15 @@ canvas {
 
   .sickness__description {
     display: block;
-    margin-left: 30%;
+    margin-left: 15%;
   }
 
   .sickness__description h5 {
     padding: 15px 0 0;
   }
 
-  .card__text {
-    margin-left: 11%;
+  .sickness__round__img {
+    margin-left: 19%;
   }
 
   .sickness__card:hover .card__text::before {
@@ -952,6 +952,12 @@ canvas {
 
   .stats__text {
     padding: 25px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
   }
 }
 
