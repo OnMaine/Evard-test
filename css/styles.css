@@ -863,14 +863,22 @@ canvas {
   .circle__first::before {
     top: 62px;
   }
+
+  .header__form::before {
+    left: 65px;
+  }
+
+  .header__form::after{
+    left: 262px;
+  }
+
+
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
 
   .header__hero,
   .header__wrapp,
-  .header__form::before,
-  .header__form::after,
   canvas {
     display: none;
   }
@@ -958,6 +966,16 @@ canvas {
     font-size: 16px;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+  .header__form::before,
+  .header__form::after {
+    display: none;
+  }
+  .booking__delivery {
+    left: 29%;
   }
 }
 
