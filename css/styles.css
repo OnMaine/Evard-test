@@ -593,7 +593,7 @@ h2 {
   transition: 1s;
 }
 
-.header__btn__submit p {
+.header__btn__submit {
   padding: 18px 57px 14px 59px;
   font-size: 28px;
 }
