@@ -894,7 +894,13 @@ canvas {
 
   .header__recommendation {
     padding-top: 25px;
-    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .header__recommendation:nth-child(2) p {
+    padding-left: 30px;
   }
 
   .header__content {
@@ -929,7 +935,7 @@ canvas {
 
   .sickness__description {
     display: block;
-    margin-left: 25%;
+    margin-left: 30%;
   }
 
   .sickness__description h5 {
@@ -942,6 +948,10 @@ canvas {
 
   .sickness__card:hover .card__text::before {
     width: 250px;
+  }
+
+  .stats__text {
+    padding: 25px;
   }
 }
 
