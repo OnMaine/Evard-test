@@ -117,9 +117,11 @@
                   <p>459 &#8381;</p>
                 </div>
               </div>
-              <form action="#" class="header__form" id="order">
-                <input type="text" placeholder="Имя" class="btn__text inp__name">
-                <input type="tel" placeholder="Телефон" class="btn__text inp__phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <form action="send.php" method="post" class="header__form" id="order">
+                <div class="form__input">
+                  <input type="text" placeholder="Имя" name="username" class="btn__text inp__name">
+                  <input type="tel" placeholder="Телефон" name="phone_number" class="btn__text inp__phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
                 <button type="submit" class="header__btn__submit" form="order">
                   Заказать <br> <span class="submit__btn__text">со скидкой</span>
                 </button>

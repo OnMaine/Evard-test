@@ -875,7 +875,8 @@ canvas {
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
-
+  .header__form::before,
+  .header__form::after,
   .header__hero,
   .header__wrapp,
   canvas {
@@ -966,6 +967,10 @@ canvas {
     display: flex;
     justify-content: center;
   }
+
+  .header__content__booking {
+    max-width: 390px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 576px) {
@@ -974,7 +979,6 @@ canvas {
   .header__form::after {
     display: none;
   }
-
   .booking__delivery {
     left: 29%;
   }
@@ -1058,6 +1062,11 @@ canvas {
 
   .header__wrapp {
     width: 420px;
+  }
+
+  .header__form::before,
+  .header__form::after {
+    display: none;
   }
 }
 
