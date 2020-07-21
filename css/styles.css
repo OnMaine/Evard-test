@@ -228,6 +228,7 @@ h2 {
 /* header content text */
 .header__content__text {
   margin-right: 25px;
+  z-index: 10;
 }
 
 .header__content__text h2 {
