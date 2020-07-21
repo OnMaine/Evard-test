@@ -991,8 +991,7 @@ canvas {
   }
 
   .header__logo {
-    visibility: hidden;
-    width: 0;
+    display: none;
   }
 
   .header__recommendation p {
