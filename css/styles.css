@@ -874,6 +874,12 @@ canvas {
   }
 }
 
+@media (min-width: 320px) and (max-width: 375px)  {
+  .sickness__round__img::before {
+    clip-path: polygon( 0% 0%, 100% 0%, 50% 50%, 15% 50%);
+  }
+}
+
 @media (min-width: 320px) and (max-width: 576px) {
   .header__form::before,
   .header__form::after,
@@ -889,10 +895,15 @@ canvas {
 
   .header__info {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__logo {
+    justify-content: center;
   }
 
   .header__title {
-    padding-left: 35px;
     display: block;
   }
 
@@ -901,7 +912,7 @@ canvas {
   }
 
   .header__recommendation {
-    padding-top: 25px;
+    padding: 25px 10px 0 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -924,11 +935,6 @@ canvas {
     text-align: center;
   }
 
-  .header__content__booking {
-    display: block;
-    margin-top: 420px;
-  }
-
   .booking__delivery {
     left: 25%;
   }
@@ -942,16 +948,12 @@ canvas {
   }
 
   .sickness__description {
-    display: block;
-    margin-left: 15%;
+    text-align: center;
   }
 
-  .sickness__description h5 {
-    padding: 15px 0 0;
-  }
-
-  .sickness__round__img {
-    margin-left: 10%;
+  .card__title {
+    max-width: 150px;
+    text-align: left;
   }
 
   .sickness__card:hover .card__text::before {
@@ -970,6 +972,11 @@ canvas {
 
   .header__content__booking {
     max-width: 390px;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .header__tab {
+    float: none;
   }
 }
 
@@ -990,11 +997,12 @@ canvas {
   }
 
   .header__price,
-  .hero__circle__tree {
-    display: none;
-  }
-
-  .header__logo {
+  .hero__circle__tree,
+  .hero__circle__mico__group,
+  .header__logo,
+  .header__form::before,
+  .header__form::after,
+  .header__hero__circle::before {
     display: none;
   }
 
@@ -1062,11 +1070,6 @@ canvas {
 
   .header__wrapp {
     width: 420px;
-  }
-
-  .header__form::before,
-  .header__form::after {
-    display: none;
   }
 }
 
